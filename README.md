@@ -9,4 +9,4 @@ This is the first part of Coursera's Developing Data Products class project. My 
     - sampleMean, distMean, sampleVar, distVar are rendered the values of the sample and theoretical means and variances.
 2. server.R: This R script processes a user's inputs and defines the values of the output's components defined in ui.R
     - input$exps: the size of the samples used for calculating their mean in order to represent sample population
-    - means, sample_mean, sample_var are assigned via reactive funtions for sample populations, sample mean, and sample variance. These variables are dependent on input$exps.
+    - means, sample_mean, sample_var, th_var are assigned via reactive funtions for sample populations, sample mean, sample variance, and theoretical variance. These variables are dependent on input$exps.

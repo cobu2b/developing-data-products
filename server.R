@@ -32,7 +32,9 @@ shinyServer(function(input, output) {
 
   # Calculate theoretical variance
   dist_sd = 1/lambda
-  th_var = (dist_sd^2)/40
+  th_var <- reactive({
+    (dist_sd^2)/input$exps
+  })
   
   # Calculate sample variance
   sample_var <- reactive({
@@ -72,6 +74,6 @@ shinyServer(function(input, output) {
   })
   
   output$distVar <- renderText({
-    paste("- Theoretical variance:", th_var)
+    paste("- Theoretical variance:", th_var())
   })  
 })
