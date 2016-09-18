@@ -40,7 +40,7 @@ shinyUI
     ),
   
     # Summary
-    h3("Sample and theoretical means"),
+    h3("Sample and theoretical means and variances"),
     textOutput("sampleMean"),
     textOutput("distMean"),
     textOutput("sampleVar"),
